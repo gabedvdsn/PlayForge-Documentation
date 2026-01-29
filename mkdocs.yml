@@ -1,0 +1,68 @@
+site_name: PlayForge Documentation
+site_description: Documentation for PlayForge, a Gameplay Ability System for Unity.
+site_author: Far Emerald Studio
+site_url: https://github.com/gabedvdsn
+
+repo_name: yourusername/your-repo-name
+repo_url: https://github.com/yourusername/your-repo-name
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
+  - Core Concepts:
+      - Abilities: concepts/abilities.md
+      - Attributes: concepts/attributes.md
+      - Effects: concepts/effects.md
+      - Tags: concepts/tags.md
+  - API Reference:
+      - Overview: api/overview.md
+  - Examples:
+      - Basic Setup: examples/basic-setup.md
+  - FAQ: faq.md
+
+plugins:
+  - search
