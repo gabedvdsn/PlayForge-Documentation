@@ -1,36 +1,45 @@
-site_name: Gameplay Ability System
-site_description: Documentation for the Unity Gameplay Ability System framework
-site_author: Your Name
-site_url: https://github.com/gabedvdsn/PlayForge-Documentation  # pages url
+site_name: PlayForge GAS
+site_description: Documentation for the PlayForge Gameplay Ability System framework for Unity
+site_author: Far Emerald Studio
+site_url: https://github.com/gabedvdsn/PlayForge-Documentation
 
-repo_name: yourusername/your-repo-name
-repo_url: https://github.com/gabedvdsn
+repo_name: PlayForge-Documentation
+repo_url: https://github.com/gabedvdsn/PlayForge-Documentation
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
-    # Light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: amber
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
+    - navigation.path
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
+    - toc.follow
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -39,36 +48,94 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - tables
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 3
 
 nav:
   - Home: index.md
   - Getting Started:
+      - getting-started/index.md
       - Installation: getting-started/installation.md
       - Quick Start: getting-started/quick-start.md
+      - Project Setup: getting-started/project-setup.md
   - Core Concepts:
+      - concepts/index.md
+      - Tags: concepts/tags.md
+      - Attributes: concepts/attributes.md
+      - Effects: concepts/effects.md
       - Abilities: concepts/abilities.md
-  # Uncomment these as you write them:
-  #     - Attributes: concepts/attributes.md
-  #     - Effects: concepts/effects.md
-  #     - Tags: concepts/tags.md
-  # - API Reference:
-  #     - Overview: api/overview.md
-  # - Examples:
-  #     - Basic Setup: examples/basic-setup.md
-  # - FAQ: faq.md
+      - Entities: concepts/entities.md
+      - Items: concepts/items.md
+      - Workers: concepts/workers.md
+  - How To:
+      - how-to/index.md
+      - Create Your First Ability: how-to/first-ability.md
+      - Create a Damage Effect: how-to/damage-effect.md
+      - Create a Buff System: how-to/buff-system.md
+      - Level Scaling: how-to/level-scaling.md
+      - Tag Requirements: how-to/tag-requirements.md
+      - Custom Workers: how-to/custom-workers.md
+  - API Reference:
+      - api/index.md
+      - Core:
+          - AbilitySystemComponent: api/core/ability-system-component.md
+          - AttributeSystemComponent: api/core/attribute-system-component.md
+          - ISource: api/core/isource.md
+          - ITarget: api/core/itarget.md
+      - Abilities:
+          - Ability: api/abilities/ability.md
+          - AbilitySpec: api/abilities/ability-spec.md
+          - AbilityBehaviour: api/abilities/ability-behaviour.md
+      - Effects:
+          - GameplayEffect: api/effects/gameplay-effect.md
+          - GameplayEffectSpec: api/effects/gameplay-effect-spec.md
+      - Attributes:
+          - Attribute: api/attributes/attribute.md
+          - AttributeSet: api/attributes/attribute-set.md
+      - Tags:
+          - Tag: api/tags/tag.md
+          - AvoidRequireTagGroup: api/tags/avoid-require-tag-group.md
+      - Scalers:
+          - AbstractAttributeScaler: api/scalers/abstract-attribute-scaler.md
+  - Samples:
+      - samples/index.md
+      - RPG Character: samples/rpg-character.md
+      - Action Combat: samples/action-combat.md
 
 plugins:
   - search
+  - tags
 
 extra:
-  generator: false  # Removes "Made with Material for MkDocs" footer
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gabedvdsn
+
+extra_css:
+  - stylesheets/extra.css
 
 copyright: Copyright &copy; 2026 Far Emerald Studio - All Rights Reserved
