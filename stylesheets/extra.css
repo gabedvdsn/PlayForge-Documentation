@@ -1,0 +1,313 @@
+/* PlayForge Documentation - Custom Styles */
+
+:root {
+  --pf-type-color: #6c8ebf;
+  --pf-method-color: #d4a373;
+  --pf-property-color: #b8a9c9;
+  --pf-param-color: #9db4c0;
+  --pf-keyword-color: #c678dd;
+  --pf-string-color: #98c379;
+}
+
+/* API Signature Blocks */
+.api-signature {
+  background: var(--md-code-bg-color);
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+  font-family: var(--md-code-font-family);
+  font-size: 0.875rem;
+  overflow-x: auto;
+}
+
+.api-signature code {
+  background: transparent;
+  padding: 0;
+}
+
+/* API Member Sections */
+.api-member {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.api-member:last-child {
+  border-bottom: none;
+}
+
+.api-member-name {
+  font-family: var(--md-code-font-family);
+  font-weight: 600;
+  color: var(--pf-method-color);
+}
+
+/* Parameter Tables */
+.param-table {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.param-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+  border-bottom: 2px solid var(--md-default-fg-color--lighter);
+}
+
+.param-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.param-table code {
+  font-size: 0.85em;
+}
+
+/* Type Badges */
+.type-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.type-badge.class {
+  background: #4a9eff30;
+  color: #4a9eff;
+}
+
+.type-badge.interface {
+  background: #98c37930;
+  color: #7cb668;
+}
+
+.type-badge.struct {
+  background: #d4a37330;
+  color: #d4a373;
+}
+
+.type-badge.enum {
+  background: #c678dd30;
+  color: #c678dd;
+}
+
+.type-badge.static {
+  background: #f0ad4e30;
+  color: #f0ad4e;
+}
+
+.type-badge.abstract {
+  background: #9b59b630;
+  color: #9b59b6;
+}
+
+/* Returns Block */
+.returns-block {
+  background: rgba(76, 175, 80, 0.1);
+  border-left: 3px solid #4caf50;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.returns-block strong {
+  color: #4caf50;
+}
+
+/* Inheritance Chain */
+.inheritance {
+  font-family: var(--md-code-font-family);
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.inheritance a {
+  color: var(--pf-type-color);
+}
+
+/* Property/Method Grid for Overview */
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.member-card {
+  background: var(--md-code-bg-color);
+  border-radius: 6px;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.member-card-title {
+  font-family: var(--md-code-font-family);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.member-card-desc {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Feature Cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: var(--md-code-bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-card p {
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0;
+}
+
+/* Namespace Header */
+.namespace-header {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.25rem;
+}
+
+/* Assembly Info */
+.assembly-info {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--lighter);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Code Syntax Colors in Signatures */
+.kw { color: var(--pf-keyword-color); }
+.type { color: var(--pf-type-color); }
+.method { color: var(--pf-method-color); }
+.param { color: var(--pf-param-color); }
+.str { color: var(--pf-string-color); }
+
+/* Quick Reference Tables */
+.quick-ref {
+  background: var(--md-code-bg-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.quick-ref code {
+  background: transparent;
+}
+
+/* Section Dividers */
+.md-typeset hr {
+  margin: 2rem 0;
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+/* Better Table Styling */
+.md-typeset table:not([class]) {
+  font-size: 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+/* Definition Lists for API */
+.md-typeset dl {
+  margin: 1rem 0;
+}
+
+.md-typeset dt {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.md-typeset dt code {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.md-typeset dd {
+  margin-left: 1.5rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* See Also Section */
+.see-also {
+  background: var(--md-code-bg-color);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+}
+
+.see-also h4 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+}
+
+.see-also ul {
+  margin-bottom: 0;
+}
+
+/* Version Badge */
+.version-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+}

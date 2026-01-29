@@ -12,25 +12,31 @@
         <meta name="author" content="Far Emerald Studio">
       
       
+        <link rel="canonical" href="https://github.com/gabedvdsn/PlayForge-Documentation/how-to/level-scaling/">
       
+      
+        <link rel="prev" href="../buff-system/">
+      
+      
+        <link rel="next" href="../tag-requirements/">
       
       
         
       
       
-      <link rel="icon" href="/gabedvdsn/PlayForge-Documentation/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>PlayForge GAS</title>
+        <title>Level Scaling - PlayForge GAS</title>
       
     
     
-      <link rel="stylesheet" href="/gabedvdsn/PlayForge-Documentation/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/gabedvdsn/PlayForge-Documentation/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="/gabedvdsn/PlayForge-Documentation/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/gabedvdsn/PlayForge-Documentation/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#level-scaling" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,7 +98,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/gabedvdsn/PlayForge-Documentation/." title="PlayForge GAS" class="md-header__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
+    <a href="../.." title="PlayForge GAS" class="md-header__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -107,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Level Scaling
             
           </span>
         </div>
@@ -219,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -240,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/gabedvdsn/PlayForge-Documentation/getting-started/" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   
@@ -262,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/gabedvdsn/PlayForge-Documentation/concepts/" class="md-tabs__link">
+        <a href="../../concepts/" class="md-tabs__link">
           
   
   
@@ -280,11 +291,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/gabedvdsn/PlayForge-Documentation/how-to/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -306,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/gabedvdsn/PlayForge-Documentation/api/" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
   
@@ -328,7 +341,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/gabedvdsn/PlayForge-Documentation/samples/" class="md-tabs__link">
+        <a href="../../samples/" class="md-tabs__link">
           
   
   
@@ -370,7 +383,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/gabedvdsn/PlayForge-Documentation/." title="PlayForge GAS" class="md-nav__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
+    <a href="../.." title="PlayForge GAS" class="md-nav__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -400,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -458,7 +471,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/gabedvdsn/PlayForge-Documentation/getting-started/" class="md-nav__link ">
+            <a href="../../getting-started/" class="md-nav__link ">
               
   
   
@@ -502,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -530,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/getting-started/quick-start/" class="md-nav__link">
+      <a href="../../getting-started/quick-start/" class="md-nav__link">
         
   
   
@@ -558,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/getting-started/project-setup/" class="md-nav__link">
+      <a href="../../getting-started/project-setup/" class="md-nav__link">
         
   
   
@@ -632,7 +645,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/gabedvdsn/PlayForge-Documentation/concepts/" class="md-nav__link ">
+            <a href="../../concepts/" class="md-nav__link ">
               
   
   
@@ -676,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/tags/" class="md-nav__link">
+      <a href="../../concepts/tags/" class="md-nav__link">
         
   
   
@@ -704,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/attributes/" class="md-nav__link">
+      <a href="../../concepts/attributes/" class="md-nav__link">
         
   
   
@@ -732,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/effects/" class="md-nav__link">
+      <a href="../../concepts/effects/" class="md-nav__link">
         
   
   
@@ -760,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/abilities/" class="md-nav__link">
+      <a href="../../concepts/abilities/" class="md-nav__link">
         
   
   
@@ -788,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/entities/" class="md-nav__link">
+      <a href="../../concepts/entities/" class="md-nav__link">
         
   
   
@@ -816,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/items/" class="md-nav__link">
+      <a href="../../concepts/items/" class="md-nav__link">
         
   
   
@@ -844,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/concepts/workers/" class="md-nav__link">
+      <a href="../../concepts/workers/" class="md-nav__link">
         
   
   
@@ -876,6 +889,8 @@
       
   
   
+    
+  
   
   
     
@@ -901,22 +916,23 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/gabedvdsn/PlayForge-Documentation/how-to/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -934,13 +950,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -960,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/first-ability/" class="md-nav__link">
+      <a href="../first-ability/" class="md-nav__link">
         
   
   
@@ -988,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/damage-effect/" class="md-nav__link">
+      <a href="../damage-effect/" class="md-nav__link">
         
   
   
@@ -1016,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/buff-system/" class="md-nav__link">
+      <a href="../buff-system/" class="md-nav__link">
         
   
   
@@ -1041,10 +1057,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/level-scaling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level Scaling
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1060,6 +1103,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scaler-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaler Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curve-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-duration-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect Duration Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cooldown-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cooldown Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-provider-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Provider Linking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-scalers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combining Scalers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1072,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/tag-requirements/" class="md-nav__link">
+      <a href="../tag-requirements/" class="md-nav__link">
         
   
   
@@ -1100,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/how-to/custom-workers/" class="md-nav__link">
+      <a href="../custom-workers/" class="md-nav__link">
         
   
   
@@ -1172,7 +1345,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/gabedvdsn/PlayForge-Documentation/api/" class="md-nav__link ">
+            <a href="../../api/" class="md-nav__link ">
               
   
   
@@ -1280,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/core/ability-system-component/" class="md-nav__link">
+      <a href="../../api/core/ability-system-component/" class="md-nav__link">
         
   
   
@@ -1308,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/core/attribute-system-component/" class="md-nav__link">
+      <a href="../../api/core/attribute-system-component/" class="md-nav__link">
         
   
   
@@ -1336,7 +1509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/core/isource/" class="md-nav__link">
+      <a href="../../api/core/isource/" class="md-nav__link">
         
   
   
@@ -1364,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/core/itarget/" class="md-nav__link">
+      <a href="../../api/core/itarget/" class="md-nav__link">
         
   
   
@@ -1462,7 +1635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/abilities/ability/" class="md-nav__link">
+      <a href="../../api/abilities/ability/" class="md-nav__link">
         
   
   
@@ -1490,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/abilities/ability-spec/" class="md-nav__link">
+      <a href="../../api/abilities/ability-spec/" class="md-nav__link">
         
   
   
@@ -1518,7 +1691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/abilities/ability-behaviour/" class="md-nav__link">
+      <a href="../../api/abilities/ability-behaviour/" class="md-nav__link">
         
   
   
@@ -1614,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/effects/gameplay-effect/" class="md-nav__link">
+      <a href="../../api/effects/gameplay-effect/" class="md-nav__link">
         
   
   
@@ -1642,7 +1815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/effects/gameplay-effect-spec/" class="md-nav__link">
+      <a href="../../api/effects/gameplay-effect-spec/" class="md-nav__link">
         
   
   
@@ -1738,7 +1911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/attributes/attribute/" class="md-nav__link">
+      <a href="../../api/attributes/attribute/" class="md-nav__link">
         
   
   
@@ -1766,7 +1939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/attributes/attribute-set/" class="md-nav__link">
+      <a href="../../api/attributes/attribute-set/" class="md-nav__link">
         
   
   
@@ -1862,7 +2035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/tags/tag/" class="md-nav__link">
+      <a href="../../api/tags/tag/" class="md-nav__link">
         
   
   
@@ -1890,7 +2063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/tags/avoid-require-tag-group/" class="md-nav__link">
+      <a href="../../api/tags/avoid-require-tag-group/" class="md-nav__link">
         
   
   
@@ -1984,7 +2157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/api/scalers/abstract-attribute-scaler/" class="md-nav__link">
+      <a href="../../api/scalers/abstract-attribute-scaler/" class="md-nav__link">
         
   
   
@@ -2056,7 +2229,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/gabedvdsn/PlayForge-Documentation/samples/" class="md-nav__link ">
+            <a href="../../samples/" class="md-nav__link ">
               
   
   
@@ -2100,7 +2273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/samples/rpg-character/" class="md-nav__link">
+      <a href="../../samples/rpg-character/" class="md-nav__link">
         
   
   
@@ -2128,7 +2301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/gabedvdsn/PlayForge-Documentation/samples/action-combat/" class="md-nav__link">
+      <a href="../../samples/action-combat/" class="md-nav__link">
         
   
   
@@ -2173,6 +2346,126 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scaler-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaler Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linear-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curve-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curve Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-duration-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect Duration Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cooldown-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cooldown Reduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-provider-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Provider Linking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-scaler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Scaler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-scalers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combining Scalers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Scaling
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2190,11 +2483,195 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    How To
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="level-scaling">Level Scaling<a class="headerlink" href="#level-scaling" title="Permanent link">&para;</a></h1>
+<p>Configure scalers for level-based stat and effect scaling.</p>
+<h2 id="scaler-types">Scaler Types<a class="headerlink" href="#scaler-types" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LinearScaler</code></td>
+<td>Explicit values per level</td>
+</tr>
+<tr>
+<td><code>CurveScaler</code></td>
+<td>Smooth curves via AnimationCurve</td>
+</tr>
+<tr>
+<td><code>FormulaScaler</code></td>
+<td>Mathematical expressions</td>
+</tr>
+<tr>
+<td><code>RandomizedScaler</code></td>
+<td>Ranges with variance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linear-scaler">Linear Scaler<a class="headerlink" href="#linear-scaler" title="Permanent link">&para;</a></h2>
+<p>Explicit values for each level:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-50</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">Magnitude Scaler</span><span class="p">:</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinearScaler</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">Level Values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">-50</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-65</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-80</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-100</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-125</span><span class="p p-Indicator">]</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="c1"># Level 1: -50</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="c1"># Level 2: -65</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="c1"># Level 3: -80</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="c1"># Level 4: -100</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="c1"># Level 5: -125</span>
+</span></code></pre></div>
+<h2 id="curve-scaler">Curve Scaler<a class="headerlink" href="#curve-scaler" title="Permanent link">&para;</a></h2>
+<p>Smooth interpolation:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">Magnitude Scaler</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CurveScaler</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">Curve</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">(AnimationCurve)</span><span class="w">  </span><span class="c1"># Edit in inspector</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">Min Level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">Max Level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">Output Min</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-50</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">Output Max</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-500</span>
+</span></code></pre></div>
+<h2 id="attribute-scaling">Attribute Scaling<a class="headerlink" href="#attribute-scaling" title="Permanent link">&para;</a></h2>
+<p>Scale base values with level:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># In EntityIdentity or AttributeSet</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HealthMax</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">Base Value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">Level Scaler</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinearScaler</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">Values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">100</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">120</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">145</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">175</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">210</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">250</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
+<h2 id="effect-duration-scaling">Effect Duration Scaling<a class="headerlink" href="#effect-duration-scaling" title="Permanent link">&para;</a></h2>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">Duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5.0</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">Duration Scaler</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinearScaler</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">Values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">5.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">6.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">7.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">8.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">10.0</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
+<h2 id="cooldown-reduction">Cooldown Reduction<a class="headerlink" href="#cooldown-reduction" title="Permanent link">&para;</a></h2>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Cooldown effect</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">Duration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10.0</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">Duration Scaler</span><span class="p">:</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinearScaler</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">Values</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">10.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">9.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">8.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">7.0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">5.0</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># Decreases with level</span>
+</span></code></pre></div>
+<h2 id="level-provider-linking">Level Provider Linking<a class="headerlink" href="#level-provider-linking" title="Permanent link">&para;</a></h2>
+<p>Link abilities/effects to item or entity level:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># On Item</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">Starting Level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nt">Max Level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nt">Abilities</span><span class="p">:</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Ability</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ability_FlameStrike</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="nt">Link Mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinkedToProvider</span><span class="w">  </span><span class="c1"># Uses item level</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nt">Passive Effects</span><span class="p">:</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Effect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Effect_FireDamageBonus</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="nt">Link Mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinkedToProvider</span>
+</span></code></pre></div>
+<h2 id="custom-scaler">Custom Scaler<a class="headerlink" href="#custom-scaler" title="Permanent link">&para;</a></h2>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="na">[Serializable]</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ExponentialScaler</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">AbstractAttributeScaler</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">{</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">BaseValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10f</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">GrowthRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.1f</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="nf">GetValueAtLevel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">BaseValue</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Mathf</span><span class="p">.</span><span class="n">Pow</span><span class="p">(</span><span class="n">GrowthRate</span><span class="p">,</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="combining-scalers">Combining Scalers<a class="headerlink" href="#combining-scalers" title="Permanent link">&para;</a></h2>
+<p>Use derivations for complex scaling:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Base damage from weapon</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WeaponDamage</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">Level Scaler</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LinearScaler [10, 15, 20, 25, 30]</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Final damage = WeaponDamage × AttackMultiplier</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FinalDamage</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nt">Derivations</span><span class="p">:</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MultiplyDerivation</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nt">Source A</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WeaponDamage</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nt">Source B</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AttackMultiplier</span>
+</span></code></pre></div>
+<h2 id="testing-scaling">Testing Scaling<a class="headerlink" href="#testing-scaling" title="Permanent link">&para;</a></h2>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Test scaler output</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">var</span><span class="w"> </span><span class="n">scaler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinearScaler</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">LevelValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">10f</span><span class="p">,</span><span class="w"> </span><span class="mf">20f</span><span class="p">,</span><span class="w"> </span><span class="mf">30f</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">level</span><span class="o">++</span><span class="p">)</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">{</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">$&quot;Level {level}: {scaler.GetValueAtLevel(level)}&quot;</span><span class="p">);</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="p">}</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -2254,10 +2731,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/gabedvdsn/PlayForge-Documentation/", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "/gabedvdsn/PlayForge-Documentation/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/gabedvdsn/PlayForge-Documentation/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
