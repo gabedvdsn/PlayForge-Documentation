@@ -1,10 +1,10 @@
-site_name: PlayForge Documentation
-site_description: Documentation for PlayForge, a Gameplay Ability System for Unity.
-site_author: Far Emerald Studio
-site_url: https://github.com/gabedvdsn
+site_name: Gameplay Ability System
+site_description: Documentation for the Unity Gameplay Ability System framework
+site_author: Your Name
+site_url: https://github.com/gabedvdsn/PlayForge-Documentation  # pages url
 
 repo_name: yourusername/your-repo-name
-repo_url: https://github.com/yourusername/your-repo-name
+repo_url: https://github.com/gabedvdsn
 
 theme:
   name: material
@@ -55,14 +55,20 @@ nav:
       - Quick Start: getting-started/quick-start.md
   - Core Concepts:
       - Abilities: concepts/abilities.md
-      - Attributes: concepts/attributes.md
-      - Effects: concepts/effects.md
-      - Tags: concepts/tags.md
-  - API Reference:
-      - Overview: api/overview.md
-  - Examples:
-      - Basic Setup: examples/basic-setup.md
-  - FAQ: faq.md
+  # Uncomment these as you write them:
+  #     - Attributes: concepts/attributes.md
+  #     - Effects: concepts/effects.md
+  #     - Tags: concepts/tags.md
+  # - API Reference:
+  #     - Overview: api/overview.md
+  # - Examples:
+  #     - Basic Setup: examples/basic-setup.md
+  # - FAQ: faq.md
 
 plugins:
   - search
+
+extra:
+  generator: false  # Removes "Made with Material for MkDocs" footer
+
+copyright: Copyright &copy; 2026 Far Emerald Studio - All Rights Reserved
