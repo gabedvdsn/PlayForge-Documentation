@@ -12,30 +12,28 @@ Every attribute has two values:
 | **Current Value** | The active gameplay value, derived from Base + modifiers |
 
 ```csharp
-var attrSystem = entity.GetComponent<AttributeSystemComponent>();
+var attrSystem = IGameplayAbilitySystem.GetAttributeSystem();
 
 // Get values
-float health = attrSystem.GetCurrentValue(healthAttribute);
-float baseHealth = attrSystem.GetBaseValue(healthAttribute);
+bool hasHealth = attrSystem.TryGetAttributeValue(healthAttribute, out float health);
+float baseHealth = health.BaseValue, currHealth = health.CurrentValue;
 
-// Modify
-attrSystem.SetBaseValue(healthAttribute, 150f);
+// Modify (recommended to do via Gameplay Effects instead of direct)
+attrSystem.ModifyAttribute(healthAttribute, SourcedModifiedAttributeValue, runEvents = true);
 ```
 
 ## Creating Attributes
 
-1. **Create > PlayForge > Attribute**
+1. **Forge Manager > Create > Attribute**
 2. Configure:
 
 ```yaml
 Name: "Health"
 Short Name: "HP"
-Icon: health_icon.png
-
-# Constraints
-Minimum: 0
-Maximum Source: HealthMax  # Dynamic cap
+Texture: health_icon.png
 ```
+
+Attributes are created separately from their parameterization, which is handled in Attribute Set declarations.
 
 ## Attribute Sets
 
@@ -51,25 +49,8 @@ Attribute Set:
     Base Value: 10
 ```
 
-## Derivations
-
-Automatically calculate values from other attributes:
-
-| Type | Formula | Use Case |
-|------|---------|----------|
-| `AddDerivation` | A + B | Flat bonuses |
-| `MultiplyDerivation` | A × B | Percentages |
-| `BaseMultiplierDerivation` | Base × (1 + B) | Level scaling |
-
-### Example: Health Scaling
-
-```yaml
-Attribute: HealthMax
-Derivations:
-  - Type: BaseMultiplierDerivation
-    Source: Level
-    Multiplier: 10  # +10 max health per level
-```
+!!! note "Attribute Parameterization"
+    Above demonstrates a limited view of attribute parameterization, with many options being omitted. Please see [Attribute Set](attribute-set.md) for more information.
 
 ## Constraints
 
@@ -83,6 +64,24 @@ Constraints:
   Rounding: RoundToInt
 ```
 
+
+## Implicit Attribute Scaling
+
+Configure cached attribute scalers in your Attribute Set to define how an attributes declared value changes with respect to changes in the system. 
+
+In this example, health implicit value is ```100 + (Strength * 8)```.
+
+```yaml
+Attribute: Health
+Magnitude: 100
+Real Magnitude: Add Scaler
+Level Scaler:
+  Type: Cached Attribute-backed Scaler
+  Magnitude: 8
+  Capture Attribute: Strength
+  Operation: Multiply
+```
+
 ## Modifying Attributes
 
 ### Via Effects (Recommended)
@@ -94,31 +93,31 @@ target.ApplyGameplayEffect(spec);
 
 ### Direct Modification
 
+Attribute modification requires a ```SourcedModifiedAttributeValue``` instance.
+
 ```csharp
-attrSystem.ModifyCurrentValue(health, -10f);  // Take damage
-attrSystem.SetBaseValue(health, 100f);        // Set directly
+attrSystem.ModifyAttribute(health, SourcedModifiedAttributeValue, runEvents: true);  // Take damage
 ```
 
 !!! warning "Prefer Effects"
-    Direct modification bypasses callbacks and tracking. Use effects for gameplay interactions.
+    Direct modification bypasses certain callbacks and tracking. Use effects for gameplay interactions.
 
 ## Listening to Changes
 
 ```csharp
-attrSystem.OnAttributeChanged += (attr, oldVal, newVal) =>
+attrSystem.Callbacks.OnAttributeChanged += (attr, oldVal, newVal) =>
 {
-    if (attr == healthAttribute && newVal <= 0)
+    if (attr == healthAttribute && newVal.CurrentValue <= 0)
         HandleDeath();
 };
 ```
 
-## Level Scaling
+## Cached Attribute Values
 
-Use scalers for level-based values:
+Values for a particular attribute are cached and organized with respect to active or retained impact derivations. Instant effect impact is never retained unless it targets the base value.
 
-```yaml
-Base Value: 100
-Level Scaler:
-  Type: LinearScaler
-  Values: [100, 120, 145, 175, 210]  # Levels 1-5
-```
+| Derivation                | Value  | Description             |
+|---------------------------|--------|-------------------------|
+| **Level 10 Talent**       | +0/+50 | Provides +50 base value |
+| **Gauntlets of Strength** | +0/+90 | Provides +90 base value |
+| **Gauntlets of Strength** | +0/+90 | Provides +90 base value |

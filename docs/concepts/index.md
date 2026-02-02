@@ -2,12 +2,30 @@
 
 Understanding these fundamental concepts is essential for working effectively with PlayForge.
 
+## The Forge
+
+A powerful custom editor suite for efficient, informed, and reliable game development.
+
+| Forge Tab | Description                                  |
+|-----------|----------------------------------------------|
+| Create    | Create new assets                            |
+| View      | Project-wide view of assets & asset values   |
+| Analysis  | Compare power balance between assets         |
+| Settings  | Set asset templates, save paths, and more... |
+
+### Forge Tutorial
+
+For more information on using the Forge, including tips and optimizations, see the video below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iqMXaDi10NQ?si=uvcrHPVnSZpYZB-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## System Overview
 
 ```mermaid
 graph LR
     subgraph Assets
         A[Ability]
+        I[Item]
         E[GameplayEffect]
         Attr[Attribute]
         T[Tag]
@@ -16,8 +34,9 @@ graph LR
     subgraph Runtime
         AS[AbilitySpec]
         ES[EffectSpec]
+        IS[ItemSpec]
     end
-    
+    I -->|generates| IS
     A -->|generates| AS
     E -->|generates| ES
     AS -->|applies| ES
@@ -30,15 +49,16 @@ graph LR
 
 PlayForge uses a consistent **Asset → Spec** pattern:
 
-| Asset (Template) | Spec (Runtime Instance) |
-|------------------|------------------------|
-| `Ability` | `AbilitySpec` |
-| `GameplayEffect` | `GameplayEffectSpec` |
+| Asset (Template) | Spec (Runtime Instance)  | Spec References                         |
+|------------------|--------------------------|-----------------------------------------|
+| `Ability`        | `AbilitySpec`            | Owner & level                           |
+| `GameplayEffect` | `GameplayEffectSpec`     | Origin, owner, target, & tracked impact |
+| `Item`           | `ItemSpec`               | Owner, level                            |
 
 **Assets** are ScriptableObjects defined in the editor.  
 **Specs** are runtime instances with context (owner, level, target).
 
-## Building Blocks
+## PlayForge Building Blocks
 
 <div class="feature-grid" markdown>
 
@@ -73,6 +93,11 @@ Equipment and consumables that provide effects and abilities.
 </div>
 
 <div class="feature-card" markdown>
+### [Scalers](scalers.md)
+Modify asset values using custom level-based scaler logic.
+</div>
+
+<div class="feature-card" markdown>
 ### [Workers](workers.md)
 Extend behavior with custom logic for effects, attributes, and entities.
 </div>
@@ -83,27 +108,51 @@ Extend behavior with custom logic for effects, attributes, and entities.
 
 ```csharp
 // Entity that can apply effects and activate abilities
-public interface ISource : ITarget
+public interface IGameplayAbilitySystem : ISource, IProxyTaskBehaviourCaller
 {
-    List<Tag> GetAffiliation();
-    GameplayEffectSpec GenerateEffectSpec(IEffectOrigin origin, GameplayEffect effect);
+    public AttributeSystemComponent GetAttributeSystem();
+    public AbilitySystemComponent GetAbilitySystem();
+    public AnalysisWorkerCache GetAnalysisCache();
+    
+    // rest of implementation...
 }
+```
 
-// Entity that can receive effects
-public interface ITarget
+```csharp
+// Entity that can apply effects and activate abilities
+public interface ISource : ITarget, IGameplayProcessHandler
 {
-    AbilitySystemComponent AsGAS();
-    List<Tag> GetAppliedTags();
+    public List<Tag> GetContextTags();
+    public TagCache GetTagCache();
+    public FrameSummary GetFrameSummary();
+    
+    // rest of implementation...
+}
+```
+
+```csharp
+// Entity that can receive effects
+public interface ITarget : ITagHandler, IValidationReady
+{
+    IGameplayAbilitySystem AsGAS();
+    List<Tag> GetAffiliation();
+    TryModifyAttribute(
+        Attribute attribute, SourcedModifiedAttributeValue sourcedModifiedValue, 
+        bool runEvents = true);
     void ApplyGameplayEffect(GameplayEffectSpec spec);
+    
+    // rest of implementation...
 }
 ```
 
 ## Recommended Reading Order
 
 1. **[Tags](tags.md)** — Foundation for requirements
-2. **[Attributes](attributes.md)** — Entity stats
-3. **[Effects](effects.md)** — Modify attributes
-4. **[Abilities](abilities.md)** — Interactive actions
-5. **[Entities](entities.md)** — Complete characters
-6. **[Items](items.md)** — Equipment system
-7. **[Workers](workers.md)** — Custom behavior
+2. **[Attributes](attributes.md)** — Entity stat
+3. **[Attribute Sets](attribute-set.md)** — Stat collection & declarations
+4. **[Scalers](scalers.md)** — Stat collection & declarations
+5. **[Effects](effects.md)** — Modify attributes
+6. **[Abilities](abilities.md)** — Interactive actions
+7. **[Items](items.md)** — Underlying equipment system
+8. **[Entities](entities.md)** — Complete characters
+9. **[Workers](workers.md)** — Custom behavior

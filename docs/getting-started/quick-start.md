@@ -1,6 +1,6 @@
 # Quick Start
 
-Create a damage ability with cost and cooldown in under 5 minutes.
+Create a damage ability with cost and cooldown in under 5 minutes. But first, lay the ground work
 
 ## What We're Building
 
@@ -13,9 +13,10 @@ A **Fireball** ability that:
 
 ## Step 1: Create the Damage Effect
 
-1. **Right-click** in Project > **Create > PlayForge > Effect**
-2. Name it `Effect_Fireball_Damage`
-3. Configure:
+1. Open Forge via **Tools > PlayForge > Forge**
+2. Click **Ability** from the **Create** tab
+3. Name it `Effect_Fireball_Damage`
+4. Configure:
 
 | Setting | Value |
 |---------|-------|
@@ -27,6 +28,8 @@ A **Fireball** ability that:
 | **Magnitude** | -50 |
 
 ## Step 2: Create Cost and Cooldown Effects
+
+Next to the **Cost** field, select the
 
 **Cost Effect** (`Effect_Fireball_Cost`):
 

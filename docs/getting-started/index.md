@@ -4,13 +4,13 @@ Welcome to PlayForge! This section will guide you through installation, initial 
 
 ## Overview
 
-PlayForge is designed to be intuitive for designers while providing the flexibility developers need. The system is built around **ScriptableObject-based assets** that can be created and configured entirely in the Unity Editor.
+PlayForge is designed to be intuitive for designers while providing the flexibility developers need. The system is built around **ScriptableObject-based assets** that can be created and configured entirely in custom inspectors.
 
 ## Prerequisites
 
 - **Unity 2021.3 LTS** or newer
 - **UniTask** package
-- Basic familiarity with Unity's ScriptableObject system
+- Basic familiarity with Unity C#
 
 ## Learning Path
 
@@ -25,7 +25,7 @@ Add PlayForge to your Unity project.
 
 <div class="feature-card" markdown>
 ### 2. Quick Start
-Create your first ability in 5 minutes.
+Create your first Ability in 2 minutes.
 
 [Quick Start →](quick-start.md)
 </div>
@@ -41,7 +41,7 @@ Best practices for organizing your project.
 
 ## Next Steps
 
-After completing the getting started guides, explore:
+After completing the getting starter guides, explore:
 
 - [Core Concepts](../concepts/index.md) — Deep dive into the system architecture
 - [How To Guides](../how-to/index.md) — Step-by-step tutorials for common tasks

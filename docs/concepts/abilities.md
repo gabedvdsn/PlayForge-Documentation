@@ -13,7 +13,7 @@ An ability defines:
 
 ## Creating Abilities
 
-1. **Create > PlayForge > Ability**
+1. **Forge Manager > Create > Ability**
 2. Configure:
 
 ```yaml

@@ -29,6 +29,8 @@ Status.CrowdControl.Stun
 Entity.Enemy.Boss
 ```
 
+Creating tags in-editor is made easier using custom tools to auto-fill hierarchical structure.
+
 ## Hierarchy Benefits
 
 Child tags match parent queries:
@@ -51,18 +53,18 @@ Asset Tag: Ability.Fireball
 ### Context Tags
 Additional categorization (multiple allowed):
 ```yaml
-Context Tags: [Ability.Type.Spell, Element.Fire]
+Context Tags: [Ability.Type.Spell, Ability.Context.Ultimate, Element.Fire]
 ```
 
 ### Granted Tags
 Applied while effect/ability is active:
 ```yaml
-Granted Tags: [Status.Burning, Status.OnFire]
+Granted Tags: [Status.Burning, Status.Asphyxiation]
 ```
 
 ## Tag Requirements
 
-Control when effects/abilities can be applied:
+Control effects/abilities in various ways, including application, event, and remove:
 
 ```yaml
 Source Requirements:
@@ -70,8 +72,8 @@ Source Requirements:
   Avoid Tags: [Status.Silenced]     # Must have NONE
 
 Target Requirements:
-  Require Tags: [Entity.Enemy]
-  Avoid Tags: [Status.Invulnerable]
+  Require Tags: [Status.Rooted]
+  Avoid Tags: [Status.Untargetable]
 ```
 
 ### Validation Logic
@@ -87,16 +89,34 @@ Can Apply =
 ## Querying Tags
 
 ```csharp
-ITarget target = ...;
+ITagHandler target = ...;
 
 // Get all applied tags
 List<Tag> tags = target.GetAppliedTags();
 
-// Check for specific tag
-bool isBurning = tags.Contains(Tags.Status.Burning);
+```csharp
+// Look up specific tag weight
+int burningWeight = target.GetTagWeight(Tags.Status.Burning);
+```
 
+```csharp
+// Check for specific condition using TagQuery
+var query = new TagQuery
+    {
+        Tag = Status.JustAte,
+        Operator = EComparisonOperator.GreaterThan,
+        Magnitude = 3
+    };
+bool hasStomachAche = target.QueryTags(query);
+
+// or
+bool hasStomachAche = target.GetTagWeight(Status.JustAte) > 3;
+```
+
+```csharp
 // Hierarchical check
-bool hasStatus = Tags.Status.Contains(someTag);
+bool isAncestor = Status.Burning.IsAncestorOf(Status);  // false
+bool isDescendent = Status.Burning.IsDescendentOf(Status);  // true
 ```
 
 ## Recommended Hierarchy

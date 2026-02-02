@@ -13,7 +13,7 @@ An effect defines:
 
 ## Creating Effects
 
-1. **Create > PlayForge > Effect**
+1. **Forge Manager > Create > Effect**
 2. Configure specifications
 
 ```yaml
@@ -23,20 +23,23 @@ Granted Tags: [Status.Poisoned]
 
 Duration Policy: Durational
 Duration: 5.0
-Tick Interval: 1.0
+Ticks: 2  # Ticks once every 2.5 seconds
+TickOnApplication: true  # Ticks on application (naturally increased # of ticks by 1)
 
 Attribute Target: Health
 Impact Operation: Add
 Magnitude: -10  # Per tick
 ```
 
-## Duration Policies
+## Duration Specification
 
-| Policy | Behavior |
-|--------|----------|
+Define how the effect behaves over time. There are 3 effect duration policies: ```Instant```, ```Durational```, and ```Infinite```.
+
+| Policy | Behaviour                         |
+|--------|-----------------------------------|
 | `Instant` | Applied once, immediately removed |
-| `Durational` | Lasts for specified duration |
-| `Infinite` | Lasts until manually removed |
+| `Durational` | Lasts for specified duration      |
+| `Infinite` | Lasts until manually removed      |
 
 ### Instant
 ```yaml
@@ -48,23 +51,64 @@ Duration Policy: Instant
 ```yaml
 Duration Policy: Durational
 Duration: 10.0  # seconds
+Ticks: 2  # number of ticks over entire duration
 ```
 
 ### Infinite
 ```yaml
 Duration Policy: Infinite
-# Removed manually or on unequip
+Tick Interval: 2.0  # time between ticks
+# Removed manually
+```
+
+## Durational Effect Settings
+
+Derive durational settings from custom logic using scalers. When scalers are used, additional parameters are included to indicate how to use computed scaler values.
+
+```yaml
+Settings: Duration, DeltaTime, Ticks, Execute Ticks, Stack Amount
+```
+
+### Duration
+
+```yaml
+Duration: 10.0
+Real Duration: AddScaler
+Duration Scaler:
+  - Type: SimpleScaler
+    Level Values: [0.0, 2.5, 5.0]
+```
+
+```yaml
+Level 1: 10.0 + 0   = 10.0
+Level 2: 10.0 + 2.5 = 12.5
+Level 3: 10.0 + 5.0 = 15.0
+```
+
+### DeltaTime
+
+```yaml
+Real DeltaTime: Multiply with Scaler
+DeltaTime Scaler:
+  - Type: SimpleScaler
+    Level Values: [1.0, 1.2, 1.4]
+```
+
+```yaml
+Level 1: dt * 1.0    = 10.0
+Level 2: dt * 1.2    = 10.0
+Level 3: dt * 1.4    = 10.0
 ```
 
 ## Impact Specification
 
 ### Target Impact
 
-| Target | Modifies |
-|--------|----------|
-| `Current` | Current value only (temporary) |
-| `Base` | Base value (permanent) |
-| `CurrentAndBase` | Both values |
+| Target | Modifies                               |
+|--------|----------------------------------------|
+| `Current` | Current value only (temporary)         |
+| `Base` | Base value (permanent/retained impact) |
+| `CurrentAndBase` | Both values                            |
 
 ### Impact Operations
 
@@ -74,16 +118,16 @@ Duration Policy: Infinite
 | `Multiply` | value × magnitude |
 | `Override` | magnitude |
 
-## Periodic Ticks (DOT/HOT)
+## Periodic Ticks
 
 ```yaml
 Duration Policy: Durational
 Duration: 10.0
-Enable Periodic Ticks: true
-Tick Interval: 2.0
-Ticks: 5
 
-Magnitude: -15  # Per tick
+Enable Periodic Ticks: true
+Ticks: 5  # over 10.0s, ticks every 2.0s
+
+
 ```
 
 ## Stacking

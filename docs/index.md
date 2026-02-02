@@ -6,22 +6,53 @@
 
 <div class="feature-card" markdown>
 ### :zap: Abilities
-Define complex multi-stage abilities with targeting, costs, cooldowns, and conditional execution through a flexible task-based system.
+Define complex multi-stage abilities with targeting, cost, cooldown, and conditional execution through a flexible task-based system.
 </div>
 
 <div class="feature-card" markdown>
 ### :bar_chart: Attributes
-Powerful attribute system with base/current values, derivations, constraints, and level-based scaling.
+Powerful attribute system with base/current values, derivations, constraints, and scaling.
 </div>
 
 <div class="feature-card" markdown>
 ### :sparkles: Effects
-Instant, durational, and infinite effects with stacking, periodic ticks, and conditional application.
+Instant, durational, and infinite effects with ticks, stacking, and conditional settings.
 </div>
 
 <div class="feature-card" markdown>
 ### :label: Tags
-Hierarchical tag system for requirements, granted effects, and complex conditional logic without code.
+Hierarchical tag system for requirements, granted resources, and complex conditional logic without code.
+</div>
+
+<div class="feature-card" markdown>
+### :label: Entities
+Encapsulate attribute-based characters with abilities, items, and the logic to handle it.
+</div>
+
+<div class="feature-card" markdown>
+### :label: Items
+Define items and their behaviour, granted effects, and parameterize how your entities handle them.
+</div>
+
+<div class="feature-card" markdown>
+### :label: Workers
+Modular components that extend asset-based behaviour with custom logic.
+</div>
+
+</div>
+
+**PlayForge** also offers the **Forge**, a custom editor window designed to optimize the design and development workflow. Whereas **PlayForge** refers to the framework as a whole, **Forge** refers to the variety of included custom editor tooling. Additionally, **Process Control** is a singleton manager designed to store and regulate Monobehaviour processes (and instanced processes).
+
+<div class="feature-grid" markdown>
+
+<div class="feature-card" markdown>
+### :label: Forge
+Custom editor for creating, viewing, and analysing the balance and complexity of your project.
+</div>
+
+<div class="feature-card" markdown>
+### :label: Process Control
+Custom process handling singleton for precise control over Monobehaviour objects and efficient use of Unity's update timings.
 </div>
 
 </div>
@@ -86,14 +117,15 @@ graph TB
 
 ## Key Features
 
-| Feature | Description |
-|---------|-------------|
-| **Data-Driven** | Define everything as ScriptableObjects—no code required for content |
-| **Level Scaling** | Built-in scalers for level-based attribute and effect scaling |
-| **Tag System** | Hierarchical tags for requirements, status effects, and categorization |
-| **Async Abilities** | UniTask-based ability execution with full cancellation support |
-| **Workers** | Extensible worker system for custom effect and entity behavior |
-| **Editor Tools** | PlayForge Manager for asset management, validation, and analysis |
+| Feature             | Description                                                            |
+|---------------------|------------------------------------------------------------------------|
+| **Data-Driven**     | Define everything as ScriptableObjects—no code required for content    |
+| **Level Scaling**   | Built-in scalers for level-based attribute and effect scaling          |
+| **Tag System**      | Hierarchical tags for requirements, status effects, and categorization |
+| **Async Abilities** | UniTask-based ability execution with full cancellation support         |
+| **Workers**         | Extensible worker system for custom effect and entity behavior         |
+| **Forge**           | PlayForge custom Editor for asset management, validation, and analysis |
+| **Runtime Tools**   | Runtime-only tools for debugging GAS systems and processes             |
 
 ---
 

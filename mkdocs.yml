@@ -83,21 +83,33 @@ nav:
       - Project Setup: getting-started/project-setup.md
   - Core Concepts:
       - concepts/index.md
-      - Tags: concepts/tags.md
-      - Attributes: concepts/attributes.md
-      - Effects: concepts/effects.md
-      - Abilities: concepts/abilities.md
-      - Entities: concepts/entities.md
-      - Items: concepts/items.md
-      - Workers: concepts/workers.md
+      - Using PlayForge:
+        - The Forge: concepts/forge.md
+        - Asset Workflow: concepts/asset-workflow.md
+        - Scalers: concepts/scalers.md
+        - Workers: concepts/workers.md
+        - Integrating PlayForge: concepts/integrating-playforge.md
+      - Assets:
+        - Tags: concepts/tags.md
+        - Attributes: concepts/attributes.md
+        - Attribute Sets: concepts/attribute-set.md
+        - Effects: concepts/effects.md
+        - Abilities: concepts/abilities.md
+        - Entities: concepts/entities.md
+        - Items: concepts/items.md
   - How To:
       - how-to/index.md
-      - Create Your First Ability: how-to/first-ability.md
-      - Create a Damage Effect: how-to/damage-effect.md
-      - Create a Buff System: how-to/buff-system.md
-      - Level Scaling: how-to/level-scaling.md
+      - Creating Assets:
+          #- Creating an Attribute Set: how-to/attribute-set.md
+          - Create Your First Ability: how-to/first-ability.md
+          - Create a Damage Effect: how-to/damage-effect.md
+          - Create a Buff System: how-to/buff-system.md
+      - Level Scaling:
+          - Configuring Scalers: how-to/level-scaling.md
+          - Linked Providers: how-to/linked-providers.md
+      - Workers:
+          - Custom Workers: how-to/custom-workers.md
       - Tag Requirements: how-to/tag-requirements.md
-      - Custom Workers: how-to/custom-workers.md
   - API Reference:
       - api/index.md
       - Core:
