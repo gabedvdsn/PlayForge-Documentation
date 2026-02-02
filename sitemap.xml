@@ -2,154 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/abilities/ability-behaviour/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/abilities/ability-spec/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/abilities/ability/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/attributes/attribute-set/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/attributes/attribute/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/core/ability-system-component/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/core/attribute-system-component/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/core/isource/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/core/itarget/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/effects/gameplay-effect-spec/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/effects/gameplay-effect/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/scalers/abstract-attribute-scaler/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/tags/avoid-require-tag-group/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/api/tags/tag/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/abilities/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/asset-workflow/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/attribute-set/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/attributes/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/effects/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/entities/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/forge/</loc>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/integrating-playforge/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/items/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/scalers/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/tags/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/concepts/workers/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/getting-started/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/getting-started/installation/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/getting-started/project-setup/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/getting-started/quick-start/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/buff-system/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/custom-workers/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/damage-effect/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/first-ability/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/level-scaling/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/linked-providers/</loc>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/how-to/tag-requirements/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/samples/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/samples/action-combat/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
     <url>
          <loc>https://github.com/gabedvdsn/PlayForge-Documentation/samples/rpg-character/</loc>
-         <lastmod>2026-01-29</lastmod>
+         <lastmod>2026-02-02</lastmod>
     </url>
 </urlset>
