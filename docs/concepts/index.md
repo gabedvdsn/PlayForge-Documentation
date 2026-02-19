@@ -93,6 +93,11 @@ Equipment and consumables that provide effects and abilities.
 </div>
 
 <div class="feature-card" markdown>
+### [Attribute Sets](attribute-set.md)
+Attribute collection and parameterization.
+</div>
+
+<div class="feature-card" markdown>
 ### [Scalers](scalers.md)
 Modify asset values using custom level-based scaler logic.
 </div>

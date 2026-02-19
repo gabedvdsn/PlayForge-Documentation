@@ -2,6 +2,9 @@
 
 This guide walks through creating a complete ability with damage, cost, and cooldown.
 
+!!! note "Creating Abilities"
+    In this chapter, we will cover how to efficiently create abilities. Abilities fall under **Step 3: Effect Origins** in the [Asset Workflow](../concepts/asset-workflow.md).
+
 ## Goal
 
 Create a **Fireball** ability that:

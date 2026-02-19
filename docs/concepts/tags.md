@@ -6,12 +6,12 @@
 
 Tags serve multiple purposes:
 
-| Purpose | Example |
-|---------|---------|
-| **Identity** | `Ability.Fireball`, `Entity.Player` |
+| Purpose | Example                               |
+|---------|---------------------------------------|
+| **Identity** | `Ability.Fireball`, `Entity.Warlock`  |
 | **Categorization** | `Element.Fire`, `DamageType.Physical` |
-| **Status Tracking** | `Status.Burning`, `Status.Stunned` |
-| **Requirements** | Must have X, must not have Y |
+| **Status Tracking** | `Status.Burning`, `Status.Stunned`    |
+| **Requirements** | Must have X, must not have Y          |
 
 ## Tag Structure
 

@@ -11,6 +11,9 @@ An item can provide:
 - **Abilities** — Granted while equipped
 - **Level Scaling** — Act as level provider
 
+!!! note "Level Provider Asset"
+    Item is a `Level Provider`. For more information, see [Forge/Level Providers](forge.md).
+
 ## Creating Items
 
 1. **Create > PlayForge > Item**

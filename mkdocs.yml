@@ -86,9 +86,12 @@ nav:
       - Using PlayForge:
         - The Forge: concepts/forge.md
         - Asset Workflow: concepts/asset-workflow.md
+        - Integrating PlayForge: concepts/integrating-playforge.md
+      - Commonly Used:
+        - Action Queue: concepts/action-queue.md
         - Scalers: concepts/scalers.md
         - Workers: concepts/workers.md
-        - Integrating PlayForge: concepts/integrating-playforge.md
+        - Data Packets: concepts/data-packets.md
       - Assets:
         - Tags: concepts/tags.md
         - Attributes: concepts/attributes.md
