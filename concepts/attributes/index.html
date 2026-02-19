@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -618,6 +618,8 @@
       
         
       
+        
+      
     
     
     
@@ -683,10 +685,6 @@
   
     
     
-      
-        
-      
-        
       
         
       
@@ -807,6 +805,137 @@
   
   
     <li class="md-nav__item">
+      <a href="../integrating-playforge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrating PlayForge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commonly Used
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commonly Used
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../action-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Action Queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../scalers/" class="md-nav__link">
         
   
@@ -863,14 +992,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../integrating-playforge/" class="md-nav__link">
+      <a href="../data-packets/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Integrating PlayForge
+    Data Packets
   
 
     
@@ -933,10 +1062,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   
@@ -954,8 +1083,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1093,6 +1222,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#bounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounds
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#constraints" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1150,6 +1290,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#querying-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Querying Attributes
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2911,6 +3062,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#bounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounds
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#constraints" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2968,6 +3130,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#querying-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Querying Attributes
+      
+    </span>
+  </a>
   
 </li>
       
@@ -3104,7 +3277,7 @@
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">attrSystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IGameplayAbilitySystem</span><span class="p">.</span><span class="n">GetAttributeSystem</span><span class="p">();</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">// Get values</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">bool</span><span class="w"> </span><span class="n">hasHealth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">attrSystem</span><span class="p">.</span><span class="n">TryGetAttributeValue</span><span class="p">(</span><span class="n">healthAttribute</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">health</span><span class="p">);</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kt">bool</span><span class="w"> </span><span class="n">hasHealth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">attrSystem</span><span class="p">.</span><span class="n">TryGetAttributeValue</span><span class="p">(</span><span class="n">healthAttribute</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">AttributeValue</span><span class="w"> </span><span class="n">health</span><span class="p">);</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">float</span><span class="w"> </span><span class="n">baseHealth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">health</span><span class="p">.</span><span class="n">BaseValue</span><span class="p">,</span><span class="w"> </span><span class="n">currHealth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">health</span><span class="p">.</span><span class="n">CurrentValue</span><span class="p">;</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// Modify (recommended to do via Gameplay Effects instead of direct)</span>
@@ -3119,61 +3292,88 @@
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">Short Name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HP&quot;</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">Texture</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">health_icon.png</span>
 </span></code></pre></div>
-<p>Attributes are created separately from their parameterization, which is handled in Attribute Set declarations.</p>
+<p>Attributes are created separately from their parameterization, which is handled in<a href="../attribute-set/">Attribute Set</a> declarations.</p>
 <h2 id="attribute-sets">Attribute Sets<a class="headerlink" href="#attribute-sets" title="Permanent link">&para;</a></h2>
 <p>Define which attributes an entity has:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">Attribute Set</span><span class="p">:</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Health</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">Base Value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HealthMax</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">Base Value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Attack</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">Base Value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Attack</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">Base Value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Attribute Parameterization</p>
-<p>Above demonstrates a limited view of attribute parameterization, with many options being omitted. Please see <a href="../attribute-set/">Attribute Set</a> for more information.</p>
+<p>Above demonstrates a limited view of attribute parameterization, with many options being omitted. Please see <a href="../attribute-set/">Attribute Set</a> for more information on attribute bounds, constraints, and scaler application.</p>
 </div>
-<h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
+<h2 id="bounds">Bounds<a class="headerlink" href="#bounds" title="Permanent link">&para;</a></h2>
 <p>Bound attribute values:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Health</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">Constraints</span><span class="p">:</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">Minimum</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">Maximum Source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HealthMax</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">Rounding</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RoundToInt</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">AutoClamp</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">AutoScaleWithBase</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># Changes to base are propagated proportionally to current value</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">RoundingMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">None</span><span class="w">  </span><span class="c1"># Floor, Ceil, Round, SnapTo</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">SnapInterval</span><span class="p">:</span>
+</span></code></pre></div>
+<h2 id="constraints">Constraints<a class="headerlink" href="#constraints" title="Permanent link">&para;</a></h2>
+<p>Bound attribute values:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Health</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">Constraints</span><span class="p">:</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">AutoClamp</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">AutoScaleWithBase</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># Changes to base are propagated proportionally to current value</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">RoundingMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">None</span><span class="w">  </span><span class="c1"># Floor, Ceil, Round, SnapTo</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">SnapInterval</span><span class="p">:</span>
 </span></code></pre></div>
 <h2 id="implicit-attribute-scaling">Implicit Attribute Scaling<a class="headerlink" href="#implicit-attribute-scaling" title="Permanent link">&para;</a></h2>
 <p>Configure cached attribute scalers in your Attribute Set to define how an attributes declared value changes with respect to changes in the system. </p>
 <p>In this example, health implicit value is <code>100 + (Strength * 8)</code>.</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Health</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">Real Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Add Scaler</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">Level Scaler</span><span class="p">:</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cached Attribute-backed Scaler</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nt">Capture Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Strength</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="nt">Operation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Multiply</span>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Health</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nt">Real Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Add Scaler</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nt">Level Scaler</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Cached Attribute-backed Scaler</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nt">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="nt">Capture Attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Strength</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="nt">Operation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Multiply</span>
 </span></code></pre></div>
 <h2 id="modifying-attributes">Modifying Attributes<a class="headerlink" href="#modifying-attributes" title="Permanent link">&para;</a></h2>
 <h3 id="via-effects-recommended">Via Effects (Recommended)<a class="headerlink" href="#via-effects-recommended" title="Permanent link">&para;</a></h3>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">GenerateEffectSpec</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span><span class="w"> </span><span class="n">damageEffect</span><span class="p">);</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">target</span><span class="p">.</span><span class="n">ApplyGameplayEffect</span><span class="p">(</span><span class="n">spec</span><span class="p">);</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">spec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">GenerateEffectSpec</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span><span class="w"> </span><span class="n">damageEffect</span><span class="p">);</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">target</span><span class="p">.</span><span class="n">ApplyGameplayEffect</span><span class="p">(</span><span class="n">spec</span><span class="p">);</span>
 </span></code></pre></div>
 <h3 id="direct-modification">Direct Modification<a class="headerlink" href="#direct-modification" title="Permanent link">&para;</a></h3>
 <p>Attribute modification requires a <code>SourcedModifiedAttributeValue</code> instance.</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">attrSystem</span><span class="p">.</span><span class="n">ModifyAttribute</span><span class="p">(</span><span class="n">health</span><span class="p">,</span><span class="w"> </span><span class="n">SourcedModifiedAttributeValue</span><span class="p">,</span><span class="w"> </span><span class="n">runEvents</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">);</span><span class="w">  </span><span class="c1">// Take damage</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">attrSystem</span><span class="p">.</span><span class="n">ModifyAttribute</span><span class="p">(</span><span class="n">health</span><span class="p">,</span><span class="w"> </span><span class="n">SourcedModifiedAttributeValue</span><span class="p">,</span><span class="w"> </span><span class="n">runEvents</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">);</span><span class="w">  </span><span class="c1">// Take damage</span>
 </span></code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Prefer Effects</p>
 <p>Direct modification bypasses certain callbacks and tracking. Use effects for gameplay interactions.</p>
 </div>
-<h2 id="listening-to-changes">Listening to Changes<a class="headerlink" href="#listening-to-changes" title="Permanent link">&para;</a></h2>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">attrSystem</span><span class="p">.</span><span class="n">Callbacks</span><span class="p">.</span><span class="n">OnAttributeChanged</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">attr</span><span class="p">,</span><span class="w"> </span><span class="n">oldVal</span><span class="p">,</span><span class="w"> </span><span class="n">newVal</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">{</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">attr</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">healthAttribute</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">newVal</span><span class="p">.</span><span class="n">CurrentValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">        </span><span class="n">HandleDeath</span><span class="p">();</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">};</span>
+<h2 id="querying-attributes">Querying Attributes<a class="headerlink" href="#querying-attributes" title="Permanent link">&para;</a></h2>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">attrSystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gas</span><span class="p">.</span><span class="n">GetAttributeSystem</span><span class="p">();</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">attrSystem</span><span class="p">.</span><span class="n">TryGetAttributeValue</span><span class="p">(</span><span class="n">health</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">AttributeValue</span><span class="w"> </span><span class="k">value</span><span class="p">)</span><span class="w"> </span><span class="p">...;</span><span class="w">  </span><span class="c1">// Get value</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">attrSystem</span><span class="p">.</span><span class="n">TryGetAttributeValue</span><span class="p">(</span><span class="n">health</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="n">CachedAttributeValue</span><span class="w"> </span><span class="n">cachedValue</span><span class="p">)</span><span class="w"> </span><span class="p">...;</span><span class="w">  </span><span class="c1">// Get cached value</span>
 </span></code></pre></div>
+<h2 id="listening-to-changes">Listening to Changes<a class="headerlink" href="#listening-to-changes" title="Permanent link">&para;</a></h2>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">IGameplayAbilitySystem</span><span class="w"> </span><span class="n">gas</span><span class="p">;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">gas</span><span class="p">.</span><span class="n">GetAttributeSystem</span><span class="p">().</span><span class="n">Callbacks</span><span class="p">.</span><span class="n">OnAttributeChanged</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">impactData</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">{</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">impactData</span><span class="p">.</span><span class="n">Attribute</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">healthAttribute</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">impactData</span><span class="p">.</span><span class="n">LiveValue</span><span class="p">.</span><span class="n">CurrentValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">        </span><span class="n">gas</span><span class="p">.</span><span class="n">MarkDead</span><span class="p">();</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>Or, using the action queue:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">gas</span><span class="p">.</span><span class="n">GetAttributeSystem</span><span class="p">().</span><span class="n">Callbacks</span><span class="p">.</span><span class="n">OnAttributeChanged</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">impactData</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="p">{</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">impactData</span><span class="p">.</span><span class="n">Attribute</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">healthAttribute</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">impactData</span><span class="p">.</span><span class="n">LiveValue</span><span class="p">.</span><span class="n">CurrentValue</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">        </span><span class="n">gas</span><span class="p">.</span><span class="n">GetActionQueue</span><span class="p">().</span><span class="n">Enqueue</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">DeathAction</span><span class="p">(</span><span class="n">gas</span><span class="p">));</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="p">};</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Action Queue</p>
+<p>The action queue approach defers the <code>MarkDead</code> call to the end of the frame. For more information, see <a href="../action-queue/">Action Queue</a>.</p>
+</div>
 <h2 id="cached-attribute-values">Cached Attribute Values<a class="headerlink" href="#cached-attribute-values" title="Permanent link">&para;</a></h2>
 <p>Values for a particular attribute are cached and organized with respect to active or retained impact derivations. Instant effect impact is never retained unless it targets the base value.</p>
 <table>
@@ -3196,8 +3396,8 @@
 <td>Provides +90 base value</td>
 </tr>
 <tr>
-<td><strong>Gauntlets of Strength</strong></td>
-<td>+0/+90</td>
+<td><strong>Mithril Dagger</strong></td>
+<td>+25/+25</td>
 <td>Provides +90 base value</td>
 </tr>
 </tbody>

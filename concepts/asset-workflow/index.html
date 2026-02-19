@@ -18,14 +18,14 @@
         <link rel="prev" href="../forge/">
       
       
-        <link rel="next" href="../scalers/">
+        <link rel="next" href="../integrating-playforge/">
       
       
         
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
@@ -80,6 +80,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#asset-workflow" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -613,6 +618,8 @@
       
         
       
+        
+      
     
     
     
@@ -680,10 +687,6 @@
   
     
     
-      
-        
-      
-        
       
         
       
@@ -780,6 +783,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asset Workflow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -798,6 +821,383 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation Order
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-game-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Game Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-attribute-declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Attribute Declarations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-effect-origins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Effect Origins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-effects-as-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Effects as Needed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Items
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Entities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Assets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Assets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-forge-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Forge (Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-unity-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Unity Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Templates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrating-playforge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrating PlayForge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commonly Used
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Commonly Used
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../action-queue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Action Queue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -866,14 +1266,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../integrating-playforge/" class="md-nav__link">
+      <a href="../data-packets/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Integrating PlayForge
+    Data Packets
   
 
     
@@ -936,10 +1336,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   
@@ -957,8 +1357,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2708,6 +3108,243 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creation Order
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation Order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-game-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Game Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-attribute-declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Attribute Declarations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-effect-origins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Effect Origins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-effects-as-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Effects as Needed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Items
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Entities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Folder Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming Conventions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Assets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Assets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#via-forge-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Forge (Recommended)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-unity-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Unity Menu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#via-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Via Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Templates
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Templates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting Up
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2793,9 +3430,248 @@
   
 
 
-  <h1>Asset Workflow</h1>
+<h1 id="asset-workflow">Asset Workflow<a class="headerlink" href="#asset-workflow" title="Permanent link">&para;</a></h1>
+<p>Recommended workflow for creating and organizing PlayForge assets.</p>
+<h2 id="creation-order">Creation Order<a class="headerlink" href="#creation-order" title="Permanent link">&para;</a></h2>
+<p>Create assets in this order to minimize dependency issues:</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph 1: Game Design
+        DD[Design Documents]
+        T[Tags]
+    end
 
+    subgraph 2: Attribute Declarations
+        A[Attributes]
+        AS[Attribute Sets]
+    end
 
+    subgraph 3: Effect Origins
+        Ab[Abilities]
+        I[Items]
+        En[Entities]
+    end
+
+    subgraph 4: Effects as Needed
+        E[Effects]
+    end
+
+    DD--&gt;T
+    T--&gt;A
+    A--&gt;AS
+    AS--&gt;Ab
+    Ab--&gt;I
+    I--&gt;En
+    En--&gt;E
+    E--&gt;|Repeat Workflow| Ab</code></pre>
+<h3 id="1-game-design">1. Game Design<a class="headerlink" href="#1-game-design" title="Permanent link">&para;</a></h3>
+<p>Define your tag hierarchy first—everything else depends on it:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Status/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── Alive
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── Dead
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── Burning
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>└── Stunned
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Entity/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── Player
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── Enemy
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>└── NPC
+</span></code></pre></div>
+<h3 id="2-attribute-declarations">2. Attribute Declarations<a class="headerlink" href="#2-attribute-declarations" title="Permanent link">&para;</a></h3>
+<p>Create your attribute model:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Core stats</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="l l-Scalar l-Scalar-Plain">Attr_Health</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="l l-Scalar l-Scalar-Plain">Attr_Mana</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="l l-Scalar l-Scalar-Plain">Attr_Strength</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="l l-Scalar l-Scalar-Plain">Attr_Intelligence</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="l l-Scalar l-Scalar-Plain">Attr_AttackDamage</span>
+</span></code></pre></div>
+<p>Next, create your attribute set(s):</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">AttrSet_PlayerVitals</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Health</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Defense</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Mana</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span>
+</span></code></pre></div>
+<h3 id="3-effect-origins">3. Effect Origins<a class="headerlink" href="#3-effect-origins" title="Permanent link">&para;</a></h3>
+<p>Abilities and items are both effect origins. In this stage, create new assets and supplement with new effects as needed.</p>
+<p>Build effect library (damage, buffs, costs, cooldowns):</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">Ability_Fireball</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">Cost</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Effect_Cost_Mana30</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">Cooldown</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Effect_Cooldown_5s</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">Stage 0</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">Task 0</span><span class="p">:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nt">Type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ApplyEffects</span>
+</span></code></pre></div>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">Item_StrengthGauntlets</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">Cost</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Effect_Cost_Mana30</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">Cooldown</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Effect_Cooldown_5s</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">Effects</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Effect_Damage_Fire</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
+<h3 id="4-effects-as-needed">4. Effects as Needed<a class="headerlink" href="#4-effects-as-needed" title="Permanent link">&para;</a></h3>
+<p>Continue to create effects to configure your effect origins.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="l l-Scalar l-Scalar-Plain">Effect_Damage_Fire</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="l l-Scalar l-Scalar-Plain">Effect_Buff_AttackUp</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="l l-Scalar l-Scalar-Plain">Effect_Cost_Mana30</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="l l-Scalar l-Scalar-Plain">Effect_Cooldown_5s</span>
+</span></code></pre></div>
+<h3 id="6-items">6. Items<a class="headerlink" href="#6-items" title="Permanent link">&para;</a></h3>
+<p>Create equipment and consumables:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">Item_Sword_Fire</span><span class="p">:</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">Passive Effects</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Effect_Buff_FireDamage</span><span class="p p-Indicator">]</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">Abilities</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Ability_FlameStrike</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
+<h3 id="7-entities">7. Entities<a class="headerlink" href="#7-entities" title="Permanent link">&para;</a></h3>
+<p>Finally, create complete characters:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">Entity_Player</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">Attribute Set</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AttrSet_PlayerVitals</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">Abilities</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Ability_BasicAttack</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">Ability_Fireball</span><span class="p p-Indicator">]</span>
+</span></code></pre></div>
+<h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link">&para;</a></h2>
+<p>Recommended organization:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Assets/Data/PlayForge/
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>├── Abilities/
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>│   ├── Player/
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>│   └── Enemy/
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>├── Attributes/
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>├── AttributeSets/
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>├── Effects/
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>│   ├── Damage/
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>│   ├── Buffs/
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>│   ├── Costs/
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>│   └── Cooldowns/
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>├── Entities/
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>├── Items/
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>└── Tags/
+</span></code></pre></div>
+<h2 id="naming-conventions">Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Asset Type</th>
+<th>Pattern</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ability</td>
+<td><code>Ability_[Name]</code></td>
+<td><code>Ability_Fireball</code></td>
+</tr>
+<tr>
+<td>Effect</td>
+<td><code>Effect_[Type]_[Name]</code></td>
+<td><code>Effect_Damage_Fire</code></td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td><code>Attr_[Name]</code></td>
+<td><code>Attr_MaxHealth</code></td>
+</tr>
+<tr>
+<td>AttributeSet</td>
+<td><code>AttrSet_[Category]</code></td>
+<td><code>AttrSet_PlayerVitals</code></td>
+</tr>
+<tr>
+<td>Entity</td>
+<td><code>Entity_[Name]</code></td>
+<td><code>Entity_Goblin</code></td>
+</tr>
+<tr>
+<td>Item</td>
+<td><code>Item_[Type]_[Name]</code></td>
+<td><code>Item_Weapon_Sword</code></td>
+</tr>
+<tr>
+<td>Tag</td>
+<td><code>Tag_[Category]_[Name]</code></td>
+<td><code>Tag_Status_Burning</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-assets">Creating Assets<a class="headerlink" href="#creating-assets" title="Permanent link">&para;</a></h2>
+<h3 id="via-forge-recommended">Via Forge (Recommended)<a class="headerlink" href="#via-forge-recommended" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Window → PlayForge → Manager</strong></li>
+<li><strong>Create</strong> tab</li>
+<li>Select type, enter name, choose template</li>
+<li>Click <strong>Create</strong></li>
+</ol>
+<h3 id="via-unity-menu">Via Unity Menu<a class="headerlink" href="#via-unity-menu" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Right-click → Create → PlayForge → [Asset Type]
+</span></code></pre></div>
+<h3 id="via-code">Via Code<a class="headerlink" href="#via-code" title="Permanent link">&para;</a></h3>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">var</span><span class="w"> </span><span class="n">ability</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ScriptableObject</span><span class="p">.</span><span class="n">CreateInstance</span><span class="o">&lt;</span><span class="n">Ability</span><span class="o">&gt;</span><span class="p">();</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">AssetDatabase</span><span class="p">.</span><span class="n">CreateAsset</span><span class="p">(</span><span class="n">ability</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Assets/Data/Abilities/NewAbility.asset&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<h3 id="setting-up">Setting Up<a class="headerlink" href="#setting-up" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Create and configure an asset as desired</li>
+<li><strong>Forge Manager → Settings → Assets</strong></li>
+<li>Select asset type tab</li>
+<li>Drag asset to Templates section</li>
+<li>(Optional) Mark as default (★) or add tag</li>
+</ol>
+<h3 id="using-templates">Using Templates<a class="headerlink" href="#using-templates" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Select template in Create tab dropdown</li>
+<li>Default templates are used by default</li>
+<li>Import button (↓) in inspector header</li>
+</ul>
+<h2 id="importing">Importing<a class="headerlink" href="#importing" title="Permanent link">&para;</a></h2>
+<p>Copy configuration from another asset:</p>
+<ol>
+<li>Select target asset in Inspector</li>
+<li>Click <strong>↓</strong> (Import) in header</li>
+<li>Choose template or browse assets</li>
+<li>Confirm import</li>
+</ol>
+<p><strong>Imported:</strong> All configuration except Name, Description, Icon</p>
+<h2 id="validation">Validation<a class="headerlink" href="#validation" title="Permanent link">&para;</a></h2>
+<p>Check for common issues:</p>
+<ol>
+<li><strong>Forge Manager → Settings → Assets</strong></li>
+<li>Click <strong>Validate All Assets</strong></li>
+</ol>
+<p>Checks for:</p>
+<ul>
+<li>Missing display names</li>
+<li>Abilities without cost/cooldown</li>
+<li>Effects without workers</li>
+<li>Empty attribute sets</li>
+</ul>
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Do</th>
+<th>Don't</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create Tags first</td>
+<td>Reference missing assets</td>
+</tr>
+<tr>
+<td>Use consistent naming</td>
+<td>Mix naming conventions</td>
+</tr>
+<tr>
+<td>Organize in folders</td>
+<td>Dump everything in root</td>
+</tr>
+<tr>
+<td>Use templates</td>
+<td>Reconfigure from scratch</td>
+</tr>
+<tr>
+<td>Validate regularly</td>
+<td>Ship unchecked assets</td>
+</tr>
+</tbody>
+</table>
 
 
 

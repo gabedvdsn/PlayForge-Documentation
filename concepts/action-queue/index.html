@@ -12,31 +12,31 @@
         <meta name="author" content="Far Emerald Studio">
       
       
-        <link rel="canonical" href="https://github.com/gabedvdsn/PlayForge-Documentation/concepts/">
+        <link rel="canonical" href="https://github.com/gabedvdsn/PlayForge-Documentation/concepts/action-queue/">
       
       
-        <link rel="prev" href="../getting-started/project-setup/">
+        <link rel="prev" href="../integrating-playforge/">
       
       
-        <link rel="next" href="forge/">
+        <link rel="next" href="../scalers/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>Core Concepts - PlayForge GAS</title>
+        <title>Action Queue - PlayForge GAS</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -81,11 +81,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#core-concepts" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="PlayForge GAS" class="md-header__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
+    <a href="../.." title="PlayForge GAS" class="md-header__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -118,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Core Concepts
+              Action Queue
             
           </span>
         </div>
@@ -230,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -251,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../getting-started/" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   
@@ -275,7 +270,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -297,7 +292,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../how-to/" class="md-tabs__link">
+        <a href="../../how-to/" class="md-tabs__link">
           
   
   
@@ -319,7 +314,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../api/" class="md-tabs__link">
+        <a href="../../api/" class="md-tabs__link">
           
   
   
@@ -341,7 +336,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../samples/" class="md-tabs__link">
+        <a href="../../samples/" class="md-tabs__link">
           
   
   
@@ -383,7 +378,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="PlayForge GAS" class="md-nav__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
+    <a href="../.." title="PlayForge GAS" class="md-nav__button md-logo" aria-label="PlayForge GAS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -413,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -471,7 +466,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../getting-started/" class="md-nav__link ">
+            <a href="../../getting-started/" class="md-nav__link ">
               
   
   
@@ -515,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/installation/" class="md-nav__link">
+      <a href="../../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -543,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/quick-start/" class="md-nav__link">
+      <a href="../../getting-started/quick-start/" class="md-nav__link">
         
   
   
@@ -571,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/project-setup/" class="md-nav__link">
+      <a href="../../getting-started/project-setup/" class="md-nav__link">
         
   
   
@@ -640,7 +635,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -658,7 +653,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -749,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="forge/" class="md-nav__link">
+      <a href="../forge/" class="md-nav__link">
         
   
   
@@ -777,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="asset-workflow/" class="md-nav__link">
+      <a href="../asset-workflow/" class="md-nav__link">
         
   
   
@@ -805,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="integrating-playforge/" class="md-nav__link">
+      <a href="../integrating-playforge/" class="md-nav__link">
         
   
   
@@ -838,8 +833,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -863,13 +860,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
@@ -890,7 +885,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -905,10 +900,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="action-queue/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -924,6 +926,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -936,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="scalers/" class="md-nav__link">
+      <a href="../scalers/" class="md-nav__link">
         
   
   
@@ -964,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="workers/" class="md-nav__link">
+      <a href="../workers/" class="md-nav__link">
         
   
   
@@ -992,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="data-packets/" class="md-nav__link">
+      <a href="../data-packets/" class="md-nav__link">
         
   
   
@@ -1101,7 +1104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tags/" class="md-nav__link">
+      <a href="../tags/" class="md-nav__link">
         
   
   
@@ -1129,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="attributes/" class="md-nav__link">
+      <a href="../attributes/" class="md-nav__link">
         
   
   
@@ -1157,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="attribute-set/" class="md-nav__link">
+      <a href="../attribute-set/" class="md-nav__link">
         
   
   
@@ -1185,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="effects/" class="md-nav__link">
+      <a href="../effects/" class="md-nav__link">
         
   
   
@@ -1213,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="abilities/" class="md-nav__link">
+      <a href="../abilities/" class="md-nav__link">
         
   
   
@@ -1241,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="entities/" class="md-nav__link">
+      <a href="../entities/" class="md-nav__link">
         
   
   
@@ -1269,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="items/" class="md-nav__link">
+      <a href="../items/" class="md-nav__link">
         
   
   
@@ -1345,7 +1348,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../how-to/" class="md-nav__link ">
+            <a href="../../how-to/" class="md-nav__link ">
               
   
   
@@ -1451,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/first-ability/" class="md-nav__link">
+      <a href="../../how-to/first-ability/" class="md-nav__link">
         
   
   
@@ -1479,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/damage-effect/" class="md-nav__link">
+      <a href="../../how-to/damage-effect/" class="md-nav__link">
         
   
   
@@ -1507,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/buff-system/" class="md-nav__link">
+      <a href="../../how-to/buff-system/" class="md-nav__link">
         
   
   
@@ -1603,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/level-scaling/" class="md-nav__link">
+      <a href="../../how-to/level-scaling/" class="md-nav__link">
         
   
   
@@ -1631,7 +1634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/linked-providers/" class="md-nav__link">
+      <a href="../../how-to/linked-providers/" class="md-nav__link">
         
   
   
@@ -1725,7 +1728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/custom-workers/" class="md-nav__link">
+      <a href="../../how-to/custom-workers/" class="md-nav__link">
         
   
   
@@ -1761,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/tag-requirements/" class="md-nav__link">
+      <a href="../../how-to/tag-requirements/" class="md-nav__link">
         
   
   
@@ -1833,7 +1836,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../api/" class="md-nav__link ">
+            <a href="../../api/" class="md-nav__link ">
               
   
   
@@ -1941,7 +1944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/core/ability-system-component/" class="md-nav__link">
+      <a href="../../api/core/ability-system-component/" class="md-nav__link">
         
   
   
@@ -1969,7 +1972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/core/attribute-system-component/" class="md-nav__link">
+      <a href="../../api/core/attribute-system-component/" class="md-nav__link">
         
   
   
@@ -1997,7 +2000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/core/isource/" class="md-nav__link">
+      <a href="../../api/core/isource/" class="md-nav__link">
         
   
   
@@ -2025,7 +2028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/core/itarget/" class="md-nav__link">
+      <a href="../../api/core/itarget/" class="md-nav__link">
         
   
   
@@ -2123,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/abilities/ability/" class="md-nav__link">
+      <a href="../../api/abilities/ability/" class="md-nav__link">
         
   
   
@@ -2151,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/abilities/ability-spec/" class="md-nav__link">
+      <a href="../../api/abilities/ability-spec/" class="md-nav__link">
         
   
   
@@ -2179,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/abilities/ability-behaviour/" class="md-nav__link">
+      <a href="../../api/abilities/ability-behaviour/" class="md-nav__link">
         
   
   
@@ -2275,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/effects/gameplay-effect/" class="md-nav__link">
+      <a href="../../api/effects/gameplay-effect/" class="md-nav__link">
         
   
   
@@ -2303,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/effects/gameplay-effect-spec/" class="md-nav__link">
+      <a href="../../api/effects/gameplay-effect-spec/" class="md-nav__link">
         
   
   
@@ -2399,7 +2402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/attributes/attribute/" class="md-nav__link">
+      <a href="../../api/attributes/attribute/" class="md-nav__link">
         
   
   
@@ -2427,7 +2430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/attributes/attribute-set/" class="md-nav__link">
+      <a href="../../api/attributes/attribute-set/" class="md-nav__link">
         
   
   
@@ -2523,7 +2526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/tags/tag/" class="md-nav__link">
+      <a href="../../api/tags/tag/" class="md-nav__link">
         
   
   
@@ -2551,7 +2554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/tags/avoid-require-tag-group/" class="md-nav__link">
+      <a href="../../api/tags/avoid-require-tag-group/" class="md-nav__link">
         
   
   
@@ -2645,7 +2648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../api/scalers/abstract-attribute-scaler/" class="md-nav__link">
+      <a href="../../api/scalers/abstract-attribute-scaler/" class="md-nav__link">
         
   
   
@@ -2717,7 +2720,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../samples/" class="md-nav__link ">
+            <a href="../../samples/" class="md-nav__link ">
               
   
   
@@ -2761,7 +2764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../samples/rpg-character/" class="md-nav__link">
+      <a href="../../samples/rpg-character/" class="md-nav__link">
         
   
   
@@ -2789,7 +2792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../samples/action-combat/" class="md-nav__link">
+      <a href="../../samples/action-combat/" class="md-nav__link">
         
   
   
@@ -2834,204 +2837,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-forge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Forge
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Forge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forge-tutorial" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Forge Tutorial
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        System Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-spec-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Spec Pattern
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#playforge-building-blocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PlayForge Building Blocks
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="PlayForge Building Blocks">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tags
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attributes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#effects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Effects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#abilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Abilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#entities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Entities
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#items" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Items
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#attribute-sets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Attribute Sets
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#scalers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scalers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Workers
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-interfaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Interfaces
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#recommended-reading-order" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Recommended Reading Order
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -3056,7 +2861,7 @@
   
   
     <li class="md-path__item">
-      <a href=".." class="md-path__link">
+      <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -3074,10 +2879,28 @@
     
     
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="../" class="md-path__link">
           
   <span class="md-ellipsis">
     Core Concepts
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Commonly Used
   </span>
 
         </a>
@@ -3099,177 +2922,9 @@
   
 
 
-<h1 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h1>
-<p>Understanding these fundamental concepts is essential for working effectively with PlayForge.</p>
-<h2 id="the-forge">The Forge<a class="headerlink" href="#the-forge" title="Permanent link">&para;</a></h2>
-<p>A powerful custom editor suite for efficient, informed, and reliable game development.</p>
-<table>
-<thead>
-<tr>
-<th>Forge Tab</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Create</td>
-<td>Create new assets</td>
-</tr>
-<tr>
-<td>View</td>
-<td>Project-wide view of assets &amp; asset values</td>
-</tr>
-<tr>
-<td>Analysis</td>
-<td>Compare power balance between assets</td>
-</tr>
-<tr>
-<td>Settings</td>
-<td>Set asset templates, save paths, and more...</td>
-</tr>
-</tbody>
-</table>
-<h3 id="forge-tutorial">Forge Tutorial<a class="headerlink" href="#forge-tutorial" title="Permanent link">&para;</a></h3>
-<p>For more information on using the Forge, including tips and optimizations, see the video below:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iqMXaDi10NQ?si=uvcrHPVnSZpYZB-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <h1>Action Queue</h1>
 
-<h2 id="system-overview">System Overview<a class="headerlink" href="#system-overview" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>graph LR
-    subgraph Assets
-        A[Ability]
-        I[Item]
-        E[GameplayEffect]
-        Attr[Attribute]
-        T[Tag]
-    end
 
-    subgraph Runtime
-        AS[AbilitySpec]
-        ES[EffectSpec]
-        IS[ItemSpec]
-    end
-    I --&gt;|generates| IS
-    A --&gt;|generates| AS
-    E --&gt;|generates| ES
-    AS --&gt;|applies| ES
-    ES --&gt;|modifies| Attr
-    T --&gt;|validates| AS
-    T --&gt;|validates| ES</code></pre>
-<h2 id="the-spec-pattern">The Spec Pattern<a class="headerlink" href="#the-spec-pattern" title="Permanent link">&para;</a></h2>
-<p>PlayForge uses a consistent <strong>Asset → Spec</strong> pattern:</p>
-<table>
-<thead>
-<tr>
-<th>Asset (Template)</th>
-<th>Spec (Runtime Instance)</th>
-<th>Spec References</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Ability</code></td>
-<td><code>AbilitySpec</code></td>
-<td>Owner &amp; level</td>
-</tr>
-<tr>
-<td><code>GameplayEffect</code></td>
-<td><code>GameplayEffectSpec</code></td>
-<td>Origin, owner, target, &amp; tracked impact</td>
-</tr>
-<tr>
-<td><code>Item</code></td>
-<td><code>ItemSpec</code></td>
-<td>Owner, level</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Assets</strong> are ScriptableObjects defined in the editor.<br />
-<strong>Specs</strong> are runtime instances with context (owner, level, target).</p>
-<h2 id="playforge-building-blocks">PlayForge Building Blocks<a class="headerlink" href="#playforge-building-blocks" title="Permanent link">&para;</a></h2>
-<div class="feature-grid">
-<div class="feature-card">
-<h3 id="tags"><a href="tags/">Tags</a><a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
-<p>Hierarchical identifiers for categorization and requirements. The foundation for conditional logic.</p>
-</div>
-<div class="feature-card">
-<h3 id="attributes"><a href="attributes/">Attributes</a><a class="headerlink" href="#attributes" title="Permanent link">&para;</a></h3>
-<p>Numeric values like Health, Mana, Attack. Support base/current values and derivations.</p>
-</div>
-<div class="feature-card">
-<h3 id="effects"><a href="effects/">Effects</a><a class="headerlink" href="#effects" title="Permanent link">&para;</a></h3>
-<p>Modify attributes and grant tags. Instant, durational, or infinite with stacking support.</p>
-</div>
-<div class="feature-card">
-<h3 id="abilities"><a href="abilities/">Abilities</a><a class="headerlink" href="#abilities" title="Permanent link">&para;</a></h3>
-<p>Interactive actions with costs, cooldowns, and multi-stage execution.</p>
-</div>
-<div class="feature-card">
-<h3 id="entities"><a href="entities/">Entities</a><a class="headerlink" href="#entities" title="Permanent link">&para;</a></h3>
-<p>Complete character definitions with attributes, abilities, and tags.</p>
-</div>
-<div class="feature-card">
-<h3 id="items"><a href="items/">Items</a><a class="headerlink" href="#items" title="Permanent link">&para;</a></h3>
-<p>Equipment and consumables that provide effects and abilities.</p>
-</div>
-<div class="feature-card">
-<h3 id="attribute-sets"><a href="attribute-set/">Attribute Sets</a><a class="headerlink" href="#attribute-sets" title="Permanent link">&para;</a></h3>
-<p>Attribute collection and parameterization.</p>
-</div>
-<div class="feature-card">
-<h3 id="scalers"><a href="scalers/">Scalers</a><a class="headerlink" href="#scalers" title="Permanent link">&para;</a></h3>
-<p>Modify asset values using custom level-based scaler logic.</p>
-</div>
-<div class="feature-card">
-<h3 id="workers"><a href="workers/">Workers</a><a class="headerlink" href="#workers" title="Permanent link">&para;</a></h3>
-<p>Extend behavior with custom logic for effects, attributes, and entities.</p>
-</div>
-</div>
-<h2 id="core-interfaces">Core Interfaces<a class="headerlink" href="#core-interfaces" title="Permanent link">&para;</a></h2>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Entity that can apply effects and activate abilities</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">IGameplayAbilitySystem</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ISource</span><span class="p">,</span><span class="w"> </span><span class="n">IProxyTaskBehaviourCaller</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">AttributeSystemComponent</span><span class="w"> </span><span class="nf">GetAttributeSystem</span><span class="p">();</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">AbilitySystemComponent</span><span class="w"> </span><span class="nf">GetAbilitySystem</span><span class="p">();</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">AnalysisWorkerCache</span><span class="w"> </span><span class="nf">GetAnalysisCache</span><span class="p">();</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="c1">// rest of implementation...</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Entity that can apply effects and activate abilities</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">ISource</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ITarget</span><span class="p">,</span><span class="w"> </span><span class="n">IGameplayProcessHandler</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Tag</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetContextTags</span><span class="p">();</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">TagCache</span><span class="w"> </span><span class="nf">GetTagCache</span><span class="p">();</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">FrameSummary</span><span class="w"> </span><span class="nf">GetFrameSummary</span><span class="p">();</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="c1">// rest of implementation...</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Entity that can receive effects</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">ITarget</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ITagHandler</span><span class="p">,</span><span class="w"> </span><span class="n">IValidationReady</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="n">IGameplayAbilitySystem</span><span class="w"> </span><span class="nf">AsGAS</span><span class="p">();</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Tag</span><span class="o">&gt;</span><span class="w"> </span><span class="n">GetAffiliation</span><span class="p">();</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="n">TryModifyAttribute</span><span class="p">(</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="n">Attribute</span><span class="w"> </span><span class="n">attribute</span><span class="p">,</span><span class="w"> </span><span class="n">SourcedModifiedAttributeValue</span><span class="w"> </span><span class="n">sourcedModifiedValue</span><span class="p">,</span><span class="w"> </span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="kt">bool</span><span class="w"> </span><span class="n">runEvents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">);</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">ApplyGameplayEffect</span><span class="p">(</span><span class="n">GameplayEffectSpec</span><span class="w"> </span><span class="n">spec</span><span class="p">);</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="c1">// rest of implementation...</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="recommended-reading-order">Recommended Reading Order<a class="headerlink" href="#recommended-reading-order" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong><a href="tags/">Tags</a></strong> — Foundation for requirements</li>
-<li><strong><a href="attributes/">Attributes</a></strong> — Entity stat</li>
-<li><strong><a href="attribute-set/">Attribute Sets</a></strong> — Stat collection &amp; declarations</li>
-<li><strong><a href="scalers/">Scalers</a></strong> — Stat collection &amp; declarations</li>
-<li><strong><a href="effects/">Effects</a></strong> — Modify attributes</li>
-<li><strong><a href="abilities/">Abilities</a></strong> — Interactive actions</li>
-<li><strong><a href="items/">Items</a></strong> — Underlying equipment system</li>
-<li><strong><a href="entities/">Entities</a></strong> — Complete characters</li>
-<li><strong><a href="workers/">Workers</a></strong> — Custom behavior</li>
-</ol>
 
 
 
@@ -3342,10 +2997,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
